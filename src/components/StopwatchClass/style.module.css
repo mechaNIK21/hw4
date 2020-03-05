@@ -1,0 +1,12 @@
+.stopwatch {
+  display: flex;
+  background-color: #306a86;
+  width: 200px;
+  color: white;
+  margin-bottom: 0;
+}
+
+img {
+  width: 70px;
+  height: 70px;
+}
