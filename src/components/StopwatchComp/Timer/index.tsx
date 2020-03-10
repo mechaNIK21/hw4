@@ -9,6 +9,7 @@ export default () => {
   const [start, setStart] = React.useState(new Date());
 
   React.useEffect(() => {
+    console.log("Запускает DidMount после рендера");
     let timer: NodeJS.Timeout;
     timer = setInterval(() => {
       const date: Date = new Date(new Date().getTime() - start.getTime());
@@ -18,6 +19,7 @@ export default () => {
 
     return () => {
       clearInterval(timer);
+      console.log("Очистка таймера");
     };
   }, []);
 
