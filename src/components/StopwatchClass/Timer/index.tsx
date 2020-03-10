@@ -17,6 +17,6 @@ export default class Timer extends React.Component<Props> {
         <span>Время</span>
         <p>{this.props.result}</p>
       </div>
-    );
+    ); 
   }
 }

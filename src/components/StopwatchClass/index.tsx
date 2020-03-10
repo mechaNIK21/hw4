@@ -61,6 +61,7 @@ export default class StopwatchClass extends React.Component<{}, State> {
     console.log(
       "вызывается перез удалением компонента в дерево, а точнее его размонтировании"
     );
+    clearInterval(this.timer);
   }
 
   toogleStopWatch = () => {
